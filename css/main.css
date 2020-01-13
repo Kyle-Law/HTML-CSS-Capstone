@@ -157,6 +157,7 @@ header > p {
     border: 1px solid var(--black);
     display: grid;
     grid: 50px 1fr / repeat(2,1fr);
+    /* padding:10px; */
 }
 
 .product >img {
@@ -164,10 +165,26 @@ header > p {
     grid-row: span 1;
     width: 100%;
     grid-column: span 2;
+    z-index:-1
 }
 
 #discount{
     border: 1px solid var(--black);
     border-radius: 50%;
-    margin: auto;
+    display: grid;
+    justify-self: end;
+    align-self: center;
+    place-items: center;
+    height: 50px;
+    width: 50px; 
+    margin: 10px 10px 0 0;
+    font-size: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+
+}
+
+.title {
+    align-self: center;
+    margin: 10px 0 0 10px;
 }
