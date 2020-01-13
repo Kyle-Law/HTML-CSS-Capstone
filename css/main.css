@@ -48,6 +48,7 @@ nav {
     position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 100;
 }
 
 nav>ul>img {
@@ -147,14 +148,21 @@ header > p {
 }
 
 /* Featured */
-#featured {
+#product_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 400px;
 }
 
+.main-title {
+    font-size: 5rem;
+    text-align: center;
+    width: 100%;
+    color: var(--primary-color);
+}
+
 .product {
-    border: 1px solid var(--black);
+    border: 3px solid var(--black);
     display: grid;
     grid: 50px 1fr / repeat(2,1fr);
     /* padding:10px; */
@@ -165,7 +173,7 @@ header > p {
     grid-row: span 1;
     width: 100%;
     grid-column: span 2;
-    z-index:-1
+    z-index:-1;
 }
 
 #discount{
@@ -187,4 +195,22 @@ header > p {
 .title {
     align-self: center;
     margin: 10px 0 0 10px;
+}
+
+.title > h1{
+    font-size: 2rem;
+    color: var(--primary-color);
+
+}
+.title > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+/* Review Section */
+#review-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 400px;
 }
