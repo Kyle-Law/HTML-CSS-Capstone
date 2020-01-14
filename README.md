@@ -2,13 +2,16 @@
 
 > Microverse HTML & CSS Capstone project
 
-![screenshot](./images/full-size-screenshot.png)
+![MainPage](./images/full-size-screenshot.png)
+![Product](./images/product-page.png)
+![Product List](./images/product-list.png)
+![Mobile Device](./images/main-mobile.png)
 
-A fully responsive web design across devices, using pure CSS Grid without any media queries.
+3-pages fully responsive web design across devices, using pure CSS Grid without any media queries.
 
 ## Built With
 
-- HTML5, CSS Grid
+- HTML5, CSS Grid, JavaScript(little)
 
 ## Live Demo
 
