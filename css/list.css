@@ -46,9 +46,9 @@ nav>ul {
 nav {
     background-color: var(--primary-color);
     position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  z-index: 100;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
 }
 
 nav>ul>img {
@@ -78,6 +78,7 @@ nav>ul>li>a:hover{
 main{
     display: grid;
     grid: 1fr / 30vh 1fr;
+    margin-top: 48px;
 }
 
 /* Filter Section */
@@ -105,9 +106,9 @@ main{
     appearance: none;
     width: 80%; /* Full-width */
     height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
+    background: var(--white); /* Grey background */
     outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
 }
@@ -202,6 +203,7 @@ main{
     text-align: center;
     width: 100%;
     color: var(--primary-color);
+    padding-top: 15px;
 }
 
 

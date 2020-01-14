@@ -24,10 +24,10 @@ html {
 }
 
 /* Layout */
-body {
+/* body {
     display:grid;
     grid: 48px 1fr/ 1fr;
-}
+} */
 
 /* NavBar */
 nav>ul {
@@ -82,6 +82,8 @@ nav>ul>li>a:hover{
     grid-auto-rows: 400px;
     grid-gap: 50px;
     padding: 20px;
+    margin-top: 48px;
+    /* position: relative; */
 }
 
 .product-main >img {

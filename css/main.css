@@ -24,10 +24,10 @@ html {
 }
 
 /* Layout */
-body {
+/* body {
     display:grid;
     grid: 48px 1fr/ 1fr;
-}
+} */
 
 /* NavBar */
 nav>ul {
