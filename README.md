@@ -2,9 +2,9 @@
 
 > Microverse HTML & CSS Capstone project
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/full-size-screenshot.png)
 
-Additional description about the project and its features.
+A fully responsive web design across devices, using pure CSS Grid without any media queries.
 
 ## Built With
 

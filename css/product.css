@@ -11,7 +11,7 @@ html,body {
 
 html {
     font-size: 10px;
-    font-family: Roboto, Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 /* Variables */
 :root{
@@ -100,6 +100,7 @@ nav>ul>li>a:hover{
 
 #product-details > h2{
     margin-bottom: 5px;
+    color: var(--secondary-color);
 }
 
 
@@ -188,6 +189,10 @@ nav>ul>li>a:hover{
     grid-auto-rows: 400px;
     padding: 20px;
     grid-gap: 15px;
+}
+
+#featured{
+    padding: 20px;
 }
 
 .main-title {
