@@ -113,6 +113,7 @@ main{
     width: 100%;
     grid-column: span 2;
     z-index:-1;
+    border-radius: 4px;
 }
 
 .discount{
