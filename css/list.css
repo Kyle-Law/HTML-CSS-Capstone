@@ -80,11 +80,120 @@ main{
     grid: 1fr / 30vh 1fr;
 }
 
+/* Filter Section */
+#filter{
+    display: grid;
+    grid-auto-rows: max-content;
+    font-size: 1.5rem;
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--grey)
+}
+
+#filter > h1{
+    border-bottom: 1px solid grey;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+  
+  /* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+  
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#color {
+    display: grid;
+    grid: 30px/repeat(5,20px);
+    column-gap: 10px;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+}
+
+.color{
+    border-radius: 100%;
+    border: 1px solid var(--black);
+    padding: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.color1{
+    background-color: red;
+}
+.color2{
+    background-color: white;
+}
+.color3{
+    background-color: yellow;
+}
+.color4{
+    background-color: lightgreen;
+}
+
+.color5{
+    background-color: pink;
+}
+
+#apply{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
+    width: 150px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    transition: .5s;
+}
+
+#apply:hover{
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
 /* Product Section */
 #product_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: 400px;
+    grid-gap: 20px;
 }
 
 .main-title {
@@ -94,8 +203,8 @@ main{
     color: var(--primary-color);
 }
 
+
 .product {
-    border: 3px solid var(--black);
     display: grid;
     grid: 50px 1fr / repeat(2,1fr);
     cursor: pointer;

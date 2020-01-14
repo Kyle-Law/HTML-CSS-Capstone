@@ -34,7 +34,40 @@
     </nav>
     <main>
         <div id="filter">
-            Here is filter section.
+            <h1>Filter</h1>
+            <div id="budget">
+                <h2>Budget Range:</h2>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="500" value="50" class="slider" id="myRange">
+                    <p>Budget: $<span id="demo"></span></p>
+                </div>
+            </div>
+            <div id="color-family">
+                <h3>Color-Family:</h3>
+                <div id="color">
+                    <div class="color color1"></div>
+                    <div class="color color2"></div>
+                    <div class="color color3"></div>
+                    <div class="color color4"></div>
+                    <div class="color color5"></div>
+                </div>
+            </div>
+            <div id="delivery-method">
+                <h3>Delivery Method:</h3>
+                <div id="check">
+                    <input type="checkbox" value="free-shipping">Free Shipping<br>
+                    <input type="checkbox"  value="express"> Express Delivery<br>
+                </div>
+            </div>
+            <div id="location">
+                <h3>Location:</h3>
+                <div id="check">
+                    <input type="checkbox" value="local">Local<br>
+                    <input type="checkbox"  value="overseas">Overseas<br>
+                </div>
+            </div>
+            <h2 id="apply">Apply Filter</h2>
+            
         </div>
         <div id="featured">
             <h1 class="main-title">Product Lists</h1>
@@ -69,9 +102,78 @@
                     </div>
                     <img src="images/rose-white.jpeg" alt="rose-white">
                 </div>
+                <div class="product product2">
+                    <div class="title">
+                        <h1>Lily Pilly</h1>
+                        <h2><s>$149</s> $119</h2>
+                    </div>
+                    <div class="discount">
+                        <img src="images/love.svg" alt="wishlist">
+                    </div>
+                    <img src="images/lily.jpeg" alt="rose-white">
+                </div>
+                <div class="product product3">
+                    <div class="title">
+                        <h1>Sunny Whinny</h1>
+                        <h2><s>$149</s> $119</h2>
+                    </div>
+                    <div class="discount">
+                        <img src="images/love.svg" alt="wishlist">
+                    </div>
+                    <img src="images/sunflower.jpeg" alt="sunflower">
+                </div>
+                <div class="product product4">
+                    <div class="title">
+                        <h1>Brocco Coli</h1>
+                        <h2><s>$49</s> $29</h2>
+                    </div>
+                    <div class="discount">
+                        <img src="images/love.svg" alt="wishlist">
+                    </div>
+                    <img src="images/broccoli.png" alt="broccoli">
+                </div>
+                <div class="product product3">
+                    <div class="title">
+                        <h1>Chicky Wicky</h1>
+                        <h2><s>$149</s> $109</h2>
+                    </div>
+                    <div class="discount">
+                        <img src="images/love.svg" alt="wishlist">
+                    </div>
+                    <img src="images/chicken-bouquet.jpeg" alt="chicken">
+                </div>
+                <div class="product product3">
+                    <div class="title">
+                        <h1>Choco Lato</h1>
+                        <h2><s>$89</s> $59</h2>
+                    </div>
+                    <div class="discount">
+                        <img src="images/love.svg" alt="wishlist">
+                    </div>
+                    <img src="images/chocolate.jpeg" alt="chocolate">
+                </div>
+                <div class="product product3">
+                    <div class="title">
+                        <h1>Fruity Witty</h1>
+                        <h2><s>$89</s> $69</h2>
+                    </div>
+                    <div class="discount">
+                        <img src="images/love.svg" alt="wishlist">
+                    </div>
+                    <img src="images/fruit-bouquet.jpeg" alt="fruits">
+                </div>
             </div>
         </div>
     </main>
-    
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+    </script>
 </body>
 </html>
