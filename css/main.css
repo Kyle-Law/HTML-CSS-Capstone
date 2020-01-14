@@ -23,12 +23,6 @@ html {
     --secondary-color: #E93F33;
 }
 
-/* Layout */
-/* body {
-    display:grid;
-    grid: 48px 1fr/ 1fr;
-} */
-
 /* NavBar */
 nav>ul {
     display:grid;
@@ -87,12 +81,9 @@ header {
 
 #left {
     display: grid;
-    /* grid: repeat(2,30px) 1fr/1fr; */
     grid-gap: 1rem;
     grid-template-rows: 50px 30px 50px;
     place-items: center;
-    /* align-items: center; */
-    /* align-items: end; */
     margin: auto;
     padding-top: 100px;
 }
@@ -171,7 +162,6 @@ header > p {
     display: grid;
     grid: 50px 1fr / repeat(2,1fr);
     cursor: pointer;
-    /* padding:10px; */
     transition: .5s;
     border-radius: 5px;
 }
@@ -189,7 +179,7 @@ header > p {
     border-radius: 4px;
 }
 
-#discount{
+.discount{
     border: 1px solid var(--black);
     border-radius: 50%;
     display: grid;

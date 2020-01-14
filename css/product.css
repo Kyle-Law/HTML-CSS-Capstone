@@ -33,9 +33,6 @@ html {
 nav>ul {
     display:grid;
     grid-template-columns: 30px 1fr repeat(3,max-content) 30px 30px;
-    /* auto responsive settings deleted */
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-    /* place-items: center; */
     align-items: center;
     grid-column-gap: 16px;
     color: var(--white);
@@ -207,7 +204,6 @@ nav>ul>li>a:hover{
     display: grid;
     grid: 50px 1fr / repeat(2,1fr);
     cursor: pointer;
-    /* padding:10px; */
     transition: .5s;
 }
 
