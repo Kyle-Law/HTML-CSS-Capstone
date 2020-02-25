@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rawcdn.githack.com/Kyle-Law/HTML-CSS-Capstone/ebb285b1ad49f3a74fe77694c00ee1f8bf11452e/index.html)
 
 ## Authors
 
